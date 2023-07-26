@@ -136,14 +136,7 @@ function importFromCsv(event) {
           </Select>
         </div>
         <div className="my-table">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              width: "100%",
-              marginBottom: "1rem",
-            }}
+          <div className="table-select"
           >
             <h2>My Transactions</h2>
 
@@ -156,13 +149,7 @@ function importFromCsv(event) {
               <Radio.Button value="date">Sort by Date</Radio.Button>
               <Radio.Button value="amount">Sort by Amount</Radio.Button>
             </Radio.Group>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                gap: "1rem",
-                width: "400px",
-              }}
+            <div className="import-export"
             >
               <button className="btn" onClick={exportToCsv}>
                 Export to CSV
@@ -180,7 +167,11 @@ function importFromCsv(event) {
               />
             </div>
           </div>
-          <Table dataSource={sortedTransactions} columns={columns} />
+          <div className="main-table-data">
+          <Table dataSource={sortedTransactions} 
+          columns={columns} />
+          </div>
+          
         </div>
       </div>
     </>

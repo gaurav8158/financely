@@ -8,7 +8,13 @@
     border-radius: 0.5rem;
     padding: 0.2rem 0.5rem;
   }
-  
+  .my-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .input-flex input {
     width: 100%;
     padding: 0.5rem;
@@ -30,4 +36,31 @@
   
 .select-input > div {
     border: 0px solid #fff !important;
+  }
+  .table-select{
+    display: flex;
+    justify-content: space-between ; 
+    align-items: center; 
+    width: 100%;
+    }
+    .import-export{
+    display: flex;
+    justify-content: center;
+    }
+
+  @media (max-width: 768px) {
+  .main-table-data {
+    overflow-x: scroll;
+    max-width: 768px;
+    width: 100%;
+  }
+  .table-select{
+    flex-direction: column;
+width: 100%;
+  }
+  .import-export{
+   flex-direction: row;
+    justify-content: space-between;
+    gap:2rem;
+}
   }
