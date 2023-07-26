@@ -9,10 +9,6 @@
     padding: 0.2rem 0.5rem;
   }
   .my-table{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
   }
   .input-flex input {
